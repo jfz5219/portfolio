@@ -1,0 +1,87 @@
+/* body {
+    color: #f7f7f7;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+} */
+
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #3700b3, #bb86fc);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #bb86fc, #3700b3);
+    transform: scale(1.1);
+}
+/* .container{
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    height: 100%;
+} */
+.about-me{
+    height: 500px;
+    background: linear-gradient(180deg, #36526D, #21303D);
+}
+.about-me > .container{
+    background-image: url(./images/stars_100.svg);
+}
+
+.skills{
+    height: 500px;
+    background: linear-gradient(180deg, #21303D, #192530);
+}
+.skills > .container{
+    background-image: url(./images/stars_50.svg);
+}
+
+
+.projects{
+    height: 500px;
+    background: linear-gradient(180deg, #192530, #131e28);
+}
+.projects > .container{
+    background-image: url(./images/stars_20.svg);
+}
+
+.contact{
+   height: 500px;
+   background: linear-gradient(180deg, #131e28, #36526D);
+}
+/* .contact > .container{
+    background-image: url(./images/stars.svg);
+    opacity: 25%;
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.container {
+    position: relative;
+    width: 500px;
+    height: 400px;
+}
+
+.moving-object {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #6200ea;
+    border-radius: 50%;
+}

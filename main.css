@@ -1,9 +1,3 @@
-/* body {
-    color: #f7f7f7;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-} */
 
 
 button {
@@ -22,7 +16,7 @@ button:hover {
     background: linear-gradient(135deg, #bb86fc, #3700b3);
     transform: scale(1.1);
 }
-/* .container{
+/* .inner-container{
     display: flex;
     flex-direction: column;
     padding: 100px;
@@ -30,49 +24,46 @@ button:hover {
 } */
 .about-me{
     height: 500px;
-    background: linear-gradient(180deg, #36526D, #21303D);
 }
-.about-me > .container{
-    background-image: url(./images/stars_100.svg);
+.about-me > .inner-container{
 }
 
 .skills{
     height: 500px;
-    background: linear-gradient(180deg, #21303D, #192530);
 }
-.skills > .container{
-    background-image: url(./images/stars_50.svg);
+.skills > .inner-container{
 }
 
 
 .projects{
     height: 500px;
-    background: linear-gradient(180deg, #192530, #131e28);
 }
-.projects > .container{
-    background-image: url(./images/stars_20.svg);
+.projects > .inner-container{
 }
 
 .contact{
    height: 500px;
-   background: linear-gradient(180deg, #131e28, #36526D);
 }
-/* .contact > .container{
+/* .contact > .inner-container{
     background-image: url(./images/stars.svg);
     opacity: 25%;
 } */
 
 body {
-    margin: 0;
+    /* margin: 0;
     padding: 0;
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: #f4f4f4;
+    align-items: center; */
+    background-color: #FDFBED !important;
 }
-
-.container {
+p{
+    font-family: "Lekton", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.inner-container {
     position: relative;
     width: 500px;
     height: 400px;
@@ -85,3 +76,69 @@ body {
     background-color: #6200ea;
     border-radius: 50%;
 }
+
+.frame{
+    width: 100%;
+}
+
+.profile_photo{
+    width: 100%;
+}
+
+.navbar{
+    top: 10px !important;
+    justify-content: flex-end !important;
+    background-color: #DFD6C5 !important;
+    border-radius: 10px;
+    padding: 0.5rem !important;
+}
+.nav-link{
+    padding: 0.5rem 1rem !important;
+    color: #705F55 !important;
+    font-family: "Lekton", serif;
+    font-weight: 700 !important;
+    font-style: normal;
+}
+.nav-link:hover{
+    background-color: #F1BDA0 !important;
+}
+.toggle-navbar{
+    width: 56px !important;
+}
+.inner-container-fluid{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    width: 100%;
+}
+
+
+.navbar-collapse.collapse {
+    width: 100%;
+    justify-content: flex-end;
+}
+.navbar-collapse.collapsing{
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .container{
+        max-width: 960px !important;
+    }
+}
+
+.navbar-toggler{
+    background: #473a32 !important;
+}
+.navbar-toggler.collapsed{
+    background: #705F55 !important;
+}
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+.navbar-toggler:hover {
+    background: #473a32 !important;
+    transform: scale(1) !important;
+}
+

@@ -1,61 +1,100 @@
 
-
-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: linear-gradient(135deg, #3700b3, #bb86fc);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: transform 0.2s ease, background 0.3s ease;
-}
-
-button:hover {
-    background: linear-gradient(135deg, #bb86fc, #3700b3);
-    transform: scale(1.1);
-}
-/* .inner-container{
-    display: flex;
-    flex-direction: column;
-    padding: 100px;
-    height: 100%;
-} */
+/* --------- Start: About Me CSS */
 .about-me{
-    height: 500px;
+    margin-top:85px !important;
 }
-.about-me > .inner-container{
+@media (max-width: 768px) {
+    .photo-container{
+        z-index: -1000;
+        padding-right: 10%;
+    }
+}
+@media (max-width: 992px) {
+    .about-me{
+        margin-top:70px !important;
+    }
 }
 
+
+/* --------- End: About Me CSS */
+
+
+.potted_plant{
+    position: absolute;
+    top: -165px;
+    z-index: -500;
+    height: 168px;
+}
+
+/* --------- Start: Projects CSS */
+.projects{
+    position: relative;
+    background-color: #705F55;
+    padding: 50px 0px;
+    margin-top: 110px;
+}
+@media (max-width: 768px) {
+    .projects{
+        padding: 30px 0px !important;
+    }
+    .github-text{
+        display: none;
+    }
+    .fab.fa-github{
+        transform: scale(1.5);
+    }
+}
+@media (max-width: 992px) {
+    .projects{
+        padding: 50px 0 !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .projects{
+        padding: 5px 5px;
+    }
+}
+.card{
+    border-radius: 10px !important;
+}
+.card-body{
+    background-color: #F3E9D7;
+    border-radius: 0 0 10px 10px;
+}
+/* --------- End: Projects CSS */
+
+/* --------- Start: Skills CSS */
 .skills{
     height: 500px;
 }
-.skills > .inner-container{
+.skills-icons{
+    
 }
-
-
-.projects{
-    height: 500px;
+.icon-container{
+    width: 85.2px;
+    margin: 0.9rem;
 }
-.projects > .inner-container{
+.icon-img{
+    background-color: #ffffff;
+    padding: 1rem;
+    border: solid 2px #705f55;
+    border-radius: 10px;
 }
-
+.icon-img > img{
+    width: 50px;
+}
+.icon-text > p{
+    margin: 0.3rem !important;
+    text-align: center;
+}
+/* --------- End: Skills CSS */
 .contact{
    height: 500px;
 }
-/* .contact > .inner-container{
-    background-image: url(./images/stars.svg);
-    opacity: 25%;
-} */
+
 
 body {
-    /* margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center; */
     background-color: #FDFBED !important;
 }
 p{
@@ -63,10 +102,10 @@ p{
     font-weight: 400;
     font-style: normal;
 }
-.inner-container {
-    position: relative;
-    width: 500px;
-    height: 400px;
+.btn-primary{
+    background-color: #F1BDA0 !important;
+    color: #473a32 !important;
+    border-color: #F1BDA0 !important;
 }
 
 .moving-object {
@@ -85,13 +124,19 @@ p{
     width: 100%;
 }
 
+/* --------- Start: Navbar CSS */
+
 .navbar{
-    top: 10px !important;
     justify-content: flex-end !important;
     background-color: #DFD6C5 !important;
-    border-radius: 10px;
-    padding: 0.5rem !important;
+    padding: 0.5rem 0 !important;
 }
+@media (min-width: 768px) {
+    .nav-item:last-child > .nav-link{
+        padding-right: 0px !important;
+    }
+}
+
 .nav-link{
     padding: 0.5rem 1rem !important;
     color: #705F55 !important;
@@ -100,7 +145,7 @@ p{
     font-style: normal;
 }
 .nav-link:hover{
-    background-color: #F1BDA0 !important;
+    color: #473a32 !important;
 }
 .toggle-navbar{
     width: 56px !important;
@@ -112,20 +157,15 @@ p{
     align-items: flex-end;
     width: 100%;
 }
-
-
+.container.inner-container-fluid{
+    width: 100% !important;
+}
 .navbar-collapse.collapse {
     width: 100%;
     justify-content: flex-end;
 }
 .navbar-collapse.collapsing{
     width: 100%;
-}
-
-@media (min-width: 992px) {
-    .container{
-        max-width: 960px !important;
-    }
 }
 
 .navbar-toggler{
@@ -142,3 +182,18 @@ p{
     transform: scale(1) !important;
 }
 
+/* --------- End: Navbar CSS */
+
+@media (min-width: 992px) {
+    .container{
+        max-width: 960px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .container{
+        width: auto !important;
+        margin-left: 1rem !important;
+        margin-right: 1rem !important;
+    }
+}

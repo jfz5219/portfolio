@@ -1,17 +1,20 @@
 
 /* --------- Start: About Me CSS */
 .about-me{
-    margin-top:85px !important;
+    margin-top:4rem !important;
+}
+.photo-container{
+    padding: 20px 0px 20px 30px;
 }
 @media (max-width: 768px) {
     .photo-container{
         z-index: -1000;
-        padding-right: 10%;
+        padding: 20px !important;
     }
 }
 @media (max-width: 992px) {
     .about-me{
-        margin-top:70px !important;
+        margin-top:3.5rem !important;
     }
 }
 
@@ -31,7 +34,13 @@
     position: relative;
     background-color: #705F55;
     padding: 50px 0px;
-    margin-top: 110px;
+    margin-top: 4rem;
+}
+
+@media (max-width: 992px) {
+    .projects{
+        padding: 50px 0 !important;
+    }
 }
 @media (max-width: 768px) {
     .projects{
@@ -44,12 +53,6 @@
         transform: scale(1.5);
     }
 }
-@media (max-width: 992px) {
-    .projects{
-        padding: 50px 0 !important;
-    }
-}
-
 @media (max-width: 450px) {
     .projects{
         padding: 5px 5px;
@@ -65,16 +68,42 @@
 /* --------- End: Projects CSS */
 
 /* --------- Start: Skills CSS */
+hr{
+    height: 2px;
+    width: 100%;
+    border: none;
+    background-image: -webkit-gradient(linear, left top, right top, from(#705f55), color-stop(#f1bda0), to(#705f55));
+    background: linear-gradient(to right, #705f55, #f1bda0, #705f55);
+    opacity: 1 !important;
+    border-top: none !important;
+    margin: 0 !important;
+}
 .skills{
-    height: 500px;
+    margin-top: 5rem;
 }
-.skills-icons{
-    
+.container.skills h1{
+    text-align: center;
+    margin-bottom: 2rem;
 }
+.container.skills > div{
+    margin: 3.2rem auto 2rem;
+}
+
 .icon-container{
-    width: 85.2px;
-    margin: 0.9rem;
+    width: 20%;
+    margin-bottom: 0.8rem;
 }
+@media (max-width: 576px) {
+    .icon-container{
+        width: 25%;
+    }
+}
+@media (max-width: 460px) {
+    .icon-container{
+        width: 33%;
+    }
+}
+
 .icon-img{
     background-color: #ffffff;
     padding: 1rem;
@@ -89,33 +118,104 @@
     text-align: center;
 }
 /* --------- End: Skills CSS */
-.contact{
-   height: 500px;
+
+
+/* --------- Start: Contact CSS */
+.container.contact{
+    margin: 5rem auto;
 }
+.contact-inner-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 40px 60px 300px;
+    height: 700px;
+    box-shadow: 0 0px 7px 1px #6e5a4e3b;
+}
+
+#contactForm{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    height: 100%;
+}
+#contact > h3{
+    margin: 0 !important;
+}
+label{
+    margin-top: 1.25rem;
+}
+input, textarea{
+    margin-top: 0.2rem !important;
+}
+.envelope-back {
+    z-index: -900;
+}
+.envelope-back > .plant{
+    position: absolute;
+    left: -100px;
+}
+.btn-submit{
+    margin-top: 1.25rem;
+    width: 150px;
+}
+@media (max-width: 768px) {
+    #contact{
+        height: 650px;
+        padding: 40px 60px 250px;
+    }
+    .btn-submit{
+        width: 100%;
+    }
+}
+@media (max-width: 576px) {
+    #contact{
+        width: 90%;
+        padding: 30px 30px 200px;
+    }
+}
+@media (max-width: 500px) {
+    #contact {
+        height: 600px;
+    }
+}
+@media (max-width: 450px) {
+    .envelope-back > .plant{
+        position: absolute;
+        left: -65px;
+    }
+}
+/* --------- End: Contact CSS */
+
 
 
 body {
     background-color: #FDFBED !important;
 }
-p{
+p, label, input, textarea{
     font-family: "Lekton", serif;
     font-weight: 400;
     font-style: normal;
+    color: #66371a !important
 }
+h1, h2, h3, h4, h5, h6{
+    font-family: "Alegreya Sans SC", serif;
+    font-weight: 700 !important;
+    font-style: normal;
+    color: #462d1e !important;
+}
+
 .btn-primary{
     background-color: #F1BDA0 !important;
     color: #473a32 !important;
     border-color: #F1BDA0 !important;
 }
-
-.moving-object {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: #6200ea;
-    border-radius: 50%;
-}
-
 .frame{
     width: 100%;
 }

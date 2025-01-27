@@ -1,3 +1,19 @@
+
+
+const observer = new IntersectionObserver((entries) =>{
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+    })
+})
+const hiddenElements = document.querySelectorAll(".hidden");
+console.log(hiddenElements.length)
+hiddenElements.forEach((el) => observer.observe(el));
+
+
+
 emailjs.init('n-9rzJ1kCzdbVInZK');
 
 const form = document.getElementById('contactForm');

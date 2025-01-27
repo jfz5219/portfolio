@@ -164,6 +164,7 @@ input, textarea{
 .btn-submit{
     margin-top: 1.25rem;
     width: 150px;
+    z-index: 100;
 }
 @media (max-width: 768px) {
     #contact{
@@ -198,7 +199,7 @@ input, textarea{
 body {
     background-color: #FDFBED !important;
 }
-p, label, input, textarea{
+p, label, input, textarea, a, button, span{
     font-family: "Lekton", serif;
     font-weight: 400;
     font-style: normal;
@@ -215,13 +216,47 @@ h1, h2, h3, h4, h5, h6{
     background-color: #F1BDA0 !important;
     color: #473a32 !important;
     border-color: #F1BDA0 !important;
+    box-shadow: 2.5px 2.5px 0px 0px #7b3c186b;
+}
+.btn-primary > span{
+    font-weight: 700 !important;
+}
+.btn-primary:hover{
+    background-color: #d8a589 !important;
+    border-color: #d8a589 !important;
+    transform: translateY(-8%);
+    transition: 0.3s;
+}
+
+.btn-outline-dark{
+    border-color: #66371a !important;
+}
+.btn-outline-dark:hover{
+    background-color: #66371a47 !important;
 }
 .frame{
     width: 100%;
 }
-
 .profile_photo{
     width: 100%;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(2px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion){
+    .hidden{
+        transition: none;
+    }
 }
 
 /* --------- Start: Navbar CSS */

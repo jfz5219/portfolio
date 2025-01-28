@@ -30,13 +30,36 @@
 }
 
 /* --------- Start: Projects CSS */
+.card{
+    border: none !important;
+    box-shadow: 2px 2px 6px 1px #47362cbf;
+}
+.card-img-top{
+    background-size: cover;
+    border-radius: 10px 10px 0 0 !important;
+}
+.pokemon .card-img-top{
+    background-image: url("./images/pokefind_thumbnail.jpg");
+    background-position: center center;
+}
+.collecto .card-img-top{
+    background-image: url("./images/collecto_thumbnail.jpg");
+}
+.portfolio .card-img-top{
+    background-image: url("./images/portfolio_thumbnail.jpg");
+    background-position: center center;
+}
+.roomshare .card-img-top{
+    background-image: url("./images/roomshare_thumbnail.jpg");
+    background-repeat: none;
+    background-position: center -20px;
+}
 .projects{
     position: relative;
     background-color: #705F55;
     padding: 50px 0px;
     margin-top: 4rem;
 }
-
 @media (max-width: 992px) {
     .projects{
         padding: 50px 0 !important;
@@ -46,9 +69,9 @@
     .projects{
         padding: 30px 0px !important;
     }
-    .github-text{
+    /* .github-text{
         display: none;
-    }
+    } */
     .fab.fa-github{
         transform: scale(1.5);
     }
@@ -222,7 +245,7 @@ h1, h2, h3, h4, h5, h6{
     font-weight: 700 !important;
 }
 .btn-primary:hover{
-    background-color: #d8a589 !important;
+    background-color: #f6cdb6 !important;
     border-color: #d8a589 !important;
     transform: translateY(-8%);
     transition: 0.3s;
@@ -233,6 +256,11 @@ h1, h2, h3, h4, h5, h6{
 }
 .btn-outline-dark:hover{
     background-color: #66371a47 !important;
+    transform: translateY(-8%);
+    transition: 0.3s;
+}
+.link-button{
+    padding: 0 1rem;
 }
 .frame{
     width: 100%;
@@ -274,13 +302,13 @@ h1, h2, h3, h4, h5, h6{
 
 .nav-link{
     padding: 0.5rem 1rem !important;
-    color: #705F55 !important;
+    color: #66371a !important;
     font-family: "Lekton", serif;
     font-weight: 700 !important;
     font-style: normal;
 }
 .nav-link:hover{
-    color: #473a32 !important;
+    color: #8b796b !important;
 }
 .toggle-navbar{
     width: 56px !important;

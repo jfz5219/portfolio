@@ -1,0 +1,11 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/#about", "destination": "/index.html#project" },
+    { "source": "/#projects", "destination": "/index.html#skills" },
+    { "source": "/#contact", "destination": "/index.html#contact" },
+    { "source": "/collecto", "destination": "/pages/collecto.html" },
+    { "source": "/roomshare", "destination": "/pages/roomshare.html" }
+
+  ]
+}

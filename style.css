@@ -183,18 +183,18 @@ h1, h2, h3, h4, h5, h6{
     border-radius: 10px 10px 0 0 !important;
 }
 .pokemon .card-img-top{
-    background-image: url("./images/pokefind_thumbnail.jpg");
+    background-image: url("./assets/pokefind_thumbnail.jpg");
     background-position: center center;
 }
 .collecto .card-img-top{
-    background-image: url("./images/collecto_thumbnail.jpg");
+    background-image: url("./assets/collecto_thumbnail.jpg");
 }
 .portfolio .card-img-top{
-    background-image: url("./images/portfolio_thumbnail.jpg");
+    background-image: url("./assets/portfolio_thumbnail.jpg");
     background-position: center center;
 }
 .roomshare .card-img-top{
-    background-image: url("./images/roomshare_thumbnail.jpg");
+    background-image: url("./assets/roomshare_thumbnail.jpg");
     background-repeat: none;
     background-position: center -20px;
 }

@@ -12,8 +12,8 @@ if (page_name == "roomshare") {
 
 
 const images = Array.from({ length: image_length }, (_, i) => ({
-    src: `fullsize_${page_name}/${i + 1}.webp`,
-    thumb: `thumbnail_${page_name}/${i + 1}.webp`,
+    src: `/pages/fullsize_${page_name}/${i + 1}.webp`,
+    thumb: `/pages/thumbnail_${page_name}/${i + 1}.webp`,
 }));
 
 // create gallery

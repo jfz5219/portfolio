@@ -1,5 +1,6 @@
 
 
+// Animation for skills section
 const observer = new IntersectionObserver((entries) =>{
     entries.forEach((entry) => {
         console.log(entry)
@@ -14,6 +15,7 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 
 
+// Set up email contact
 emailjs.init('n-9rzJ1kCzdbVInZK');
 
 const form = document.getElementById('contactForm');

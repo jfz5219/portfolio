@@ -1,3 +1,147 @@
+/* --------- start: Overall Page CSS */
+body {
+    background-color: #FDFBED !important;
+}
+p, label, input, textarea, a, button, span{
+    font-family: "Lekton", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #66371a !important
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "Alegreya Sans SC", serif;
+    font-weight: 700 !important;
+    font-style: normal;
+    color: #462d1e !important;
+}
+
+@media (min-width: 992px) {
+    .container{
+        max-width: 960px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .container{
+        width: auto !important;
+        margin-left: 1rem !important;
+        margin-right: 1rem !important;
+    }
+}
+
+
+.btn-primary{
+    background-color: #F1BDA0 !important;
+    color: #473a32 !important;
+    border-color: #F1BDA0 !important;
+    box-shadow: 2.5px 2.5px 0px 0px #7b3c186b;
+}
+.btn-primary > span{
+    font-weight: 700 !important;
+}
+.btn-primary:hover{
+    background-color: #f6cdb6 !important;
+    border-color: #d8a589 !important;
+    transform: translateY(-8%);
+    transition: 0.3s;
+}
+
+.btn-outline-dark{
+    border-color: #66371a !important;
+}
+.btn-outline-dark:hover{
+    background-color: #66371a47 !important;
+    transform: translateY(-8%);
+    transition: 0.3s;
+}
+.link-button{
+    padding: 0 1rem;
+}
+.frame{
+    width: 100%;
+}
+.profile_photo{
+    width: 100%;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(2px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion){
+    .hidden{
+        transition: none;
+    }
+}
+/* --------- End: Overall Page CSS */
+
+/* --------- Start: Navbar CSS */
+
+.navbar{
+    justify-content: flex-end !important;
+    background-color: #DFD6C5 !important;
+    padding: 0.5rem 0 !important;
+}
+@media (min-width: 768px) {
+    .nav-item:last-child > .nav-link{
+        padding-right: 0px !important;
+    }
+}
+
+.nav-link{
+    padding: 0.5rem 1rem !important;
+    color: #66371a !important;
+    font-family: "Lekton", serif;
+    font-weight: 700 !important;
+    font-style: normal;
+}
+.nav-link:hover{
+    color: #8b796b !important;
+}
+.toggle-navbar{
+    width: 56px !important;
+}
+.inner-container-fluid{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    width: 100%;
+}
+.container.inner-container-fluid{
+    width: 100% !important;
+}
+.navbar-collapse.collapse {
+    width: 100%;
+    justify-content: flex-end;
+}
+.navbar-collapse.collapsing{
+    width: 100%;
+}
+
+.navbar-toggler{
+    background: #473a32 !important;
+}
+.navbar-toggler.collapsed{
+    background: #705F55 !important;
+}
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+.navbar-toggler:hover {
+    background: #473a32 !important;
+    transform: scale(1) !important;
+}
+
+/* --------- End: Navbar CSS */
 
 /* --------- Start: About Me CSS */
 .about-me{
@@ -218,145 +362,3 @@ input, textarea{
 /* --------- End: Contact CSS */
 
 
-
-body {
-    background-color: #FDFBED !important;
-}
-p, label, input, textarea, a, button, span{
-    font-family: "Lekton", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #66371a !important
-}
-h1, h2, h3, h4, h5, h6{
-    font-family: "Alegreya Sans SC", serif;
-    font-weight: 700 !important;
-    font-style: normal;
-    color: #462d1e !important;
-}
-
-.btn-primary{
-    background-color: #F1BDA0 !important;
-    color: #473a32 !important;
-    border-color: #F1BDA0 !important;
-    box-shadow: 2.5px 2.5px 0px 0px #7b3c186b;
-}
-.btn-primary > span{
-    font-weight: 700 !important;
-}
-.btn-primary:hover{
-    background-color: #f6cdb6 !important;
-    border-color: #d8a589 !important;
-    transform: translateY(-8%);
-    transition: 0.3s;
-}
-
-.btn-outline-dark{
-    border-color: #66371a !important;
-}
-.btn-outline-dark:hover{
-    background-color: #66371a47 !important;
-    transform: translateY(-8%);
-    transition: 0.3s;
-}
-.link-button{
-    padding: 0 1rem;
-}
-.frame{
-    width: 100%;
-}
-.profile_photo{
-    width: 100%;
-}
-
-.hidden{
-    opacity: 0;
-    filter: blur(2px);
-    transform: translateX(-100%);
-    transition: all 1s;
-}
-.show{
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-}
-
-@media(prefers-reduced-motion){
-    .hidden{
-        transition: none;
-    }
-}
-
-/* --------- Start: Navbar CSS */
-
-.navbar{
-    justify-content: flex-end !important;
-    background-color: #DFD6C5 !important;
-    padding: 0.5rem 0 !important;
-}
-@media (min-width: 768px) {
-    .nav-item:last-child > .nav-link{
-        padding-right: 0px !important;
-    }
-}
-
-.nav-link{
-    padding: 0.5rem 1rem !important;
-    color: #66371a !important;
-    font-family: "Lekton", serif;
-    font-weight: 700 !important;
-    font-style: normal;
-}
-.nav-link:hover{
-    color: #8b796b !important;
-}
-.toggle-navbar{
-    width: 56px !important;
-}
-.inner-container-fluid{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    align-items: flex-end;
-    width: 100%;
-}
-.container.inner-container-fluid{
-    width: 100% !important;
-}
-.navbar-collapse.collapse {
-    width: 100%;
-    justify-content: flex-end;
-}
-.navbar-collapse.collapsing{
-    width: 100%;
-}
-
-.navbar-toggler{
-    background: #473a32 !important;
-}
-.navbar-toggler.collapsed{
-    background: #705F55 !important;
-}
-.navbar-toggler:focus{
-    box-shadow: none !important;
-}
-.navbar-toggler:hover {
-    background: #473a32 !important;
-    transform: scale(1) !important;
-}
-
-/* --------- End: Navbar CSS */
-
-@media (min-width: 992px) {
-    .container{
-        max-width: 960px !important;
-    }
-}
-
-@media (max-width: 576px) {
-    .container{
-        width: auto !important;
-        margin-left: 1rem !important;
-        margin-right: 1rem !important;
-    }
-}

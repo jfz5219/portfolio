@@ -12,8 +12,8 @@ if (page_name == "roomshare") {
 
 
 const images = Array.from({ length: image_length }, (_, i) => ({
-    src: `/pages/fullsize_${page_name}/${i + 1}.webp`,
-    thumb: `/pages/thumbnail_${page_name}/${i + 1}.webp`,
+    src: `https://jxz-portfolio-images.s3.us-east-1.amazonaws.com/projects/${page_name}/fullsize/${i + 1}.webp`,
+    thumb: `https://jxz-portfolio-images.s3.us-east-1.amazonaws.com/projects/${page_name}/thumbnail/${i + 1}.webp`,
 }));
 
 // create gallery
